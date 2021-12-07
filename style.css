@@ -1,60 +1,305 @@
-body{
-    font-family:Arial, Helvetica, sans-serif;
+body {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
-.wrapper{
+
+.wrapper {
     max-width: 960px;
     margin: 0 auto;
 }
-.table-1 table{
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-1 ul {
+    padding: 20px 0;
+    border-radius: 3px;
+    background-color: #2a3644;
+    list-style: none;
+}
+.menu-1>li{
+    border-right: 1px solid #3f4852;
+}
+.add-1{
+    display: none;
+}
+.menu-1>li:hover .add-1{
+    display: block;
+    position: absolute;
+}
+.menu-1 a:first-child {
+    text-align: left;
+    padding-left: 32px;
+}
+.menu-1 a:last-child {
+    text-align: right;
+    padding-left: 32px;
+}
+.menu-1 a:last-child {
+    padding-right: 32px;
+}
+.menu-1 a:hover{
+    color:#fd8612
+}
+.menu-1 li:hover{
+    background-color: #3f4852;
+}
+.menu-1 a {
+
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Arial";
+    text-decoration: none;
+
+}
+
+.table-1 h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #bfbfbf;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.table-1 table {
     border-collapse: collapse;
     width: 960px;
-height: 367px;
-border-radius: 3px;
-background-color: #f2f2f2;
+    height: 367px;
+    border-radius: 3px;
+    background-color: #f2f2f2;
 }
-.table-1 tr{
+
+.table-1 tr {
     text-align: center;
 }
-.table-1 thead{
-width: 960px;
-height: 92px;
-border-radius: 3px;
-background-color: #2a3644;
-font-size: 16px;
-color: #ffffff;
-font-weight: bold;
-font-family: "Arial";
+
+.table-1 thead {
+    width: 960px;
+    height: 92px;
+    border-radius: 3px;
+    background-color: #2a3644;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Arial";
 }
+
 thead th:not(:last-child) {
     border-right: 1px solid #3f4852;
 }
-.table-1 tbody tr:not(:last-child){
+
+.table-1 tbody tr:not(:last-child) {
     border-bottom: 1px solid #c0c1c2;
     overflow: hidden;
 }
-.table-1 tbody tr:hover{
+
+.table-1 tbody tr:hover {
     background-color: #c0c1c2;
 }
-.tbody tr:nth-child(odd){
+
+.tbody tr:nth-child(odd) {
     background-color: #f2f2f2;
 }
-.table-1 tbody{
+
+tbody td:nth-child(3n) {
+    text-align: right;
+    padding-right: 21px;
+}
+
+thead .two {
+    text-align: center;
+}
+
+tbody td:nth-child(4n) {
+    text-align: right;
+    padding-right: 21px;
+}
+
+tbody td:nth-child(5n) {
+    text-align: right;
+    padding-right: 21px;
+}
+
+.table-1 tbody {
     border-radius: 3px;
-background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
-.table-1 td{
+
+.table-1 td {
     font-size: 16px;
-color: #2a3644;
-font-family: "Arial";
-    padding: 30px;
+    color: #2a3644;
+    font-family: "Arial";
+    padding: 23px 0;
 }
+
+.table-1 td {
+    text-align: left;
+    padding-left: 23px;
+    ;
+}
+
+tbody td:first-child {
+    text-align: right;
+    padding-left: 20px;
+}
+
 tbody tr:nth-child() {
     background-color: #f2f2f2;
 }
-tbody td:not(:last-child){
+
+tbody td:not(:last-child) {
     border-right: 1px solid #c0c1c2;
 }
-.result{
+
+.result {
     border-bottom: 1px solid #3f4852;
+}
+
+thead th:nth-child(2n) {
+    text-align: left;
+    padding-left: 23px;
+}
+
+tbody td:first-child {
+    text-align: center;
+}
+
+thead th:first-child {
+    border-radius: 3px 0 0 0;
+}
+
+thead th:last-child {
+    border-radius: 0 3px 0 0;
+    overflow: hidden;
+}
+
+tbody td:first-child {
+    border-radius: 0 0 0 3px;
+}
+
+tbody td:last-child {
+    border-radius: 0 0 3px 0;
+}
+
+.table-2 {
+    margin: 20px 0;
+    display: table;
+    width: 960px;
+}
+
+.tbody i {
+    border-collapse: collapse;
+    padding: 14px 0;
+    font-size: 16px;
+    color: #2a3644;
+    font-family: "Arial";
+    font-style: normal;
+}
+
+.tbody:hover {
+    background-color: #c0c1c2;
+    border-collapse: collapse;
+}
+
+.thead b {
+    padding: 20px 0;
+}
+
+.thead p {
+    border-radius: 3px 3px 0 0;
+}
+
+.thead {
+    margin: 0;
+    background-color: #2a3644;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.thead b:first-child {
+    padding-left: 20px;
+}
+
+.tbody {
+    margin: 0;
+    height: 45px;
+    background-color: #e8e8e8;
+}
+
+.table-2 p {
+    display: table-row;
+    margin: 0;
+    text-align: center;
+}
+
+.table-2 b,
+.table-2 i {
+    display: table-cell;
+}
+
+.tbody i:first-child {
+    width: 10%;
+    padding-left: 23px;
+}
+
+.tbody i:not(last-child) {
+    border-bottom: 1px solid #c0c1c2;
+    overflow: hidden;
+}
+
+.tbody i:nth-child(3n) {
+    padding-left: 8px;
+    text-align: center;
+}
+
+.tbody i:last-child {
+    padding-left: 10px;
+    text-align: center;
+}
+
+.table-2 p>i:not(:last-child) {
+    border-right: 1px solid #c0c1c2;
+}
+
+.thead p {
+    padding: 14px 0;
+}
+
+.thead b:nth-child(2) {
+    text-align: left;
+    padding-left: 40px;
+}
+
+.tbody i:nth-child(2n) {
+    text-align: left;
+    padding-left: 40px;
+}
+
+.tbody i:nth-child(4n) {
+    padding-left: 0;
+    text-align: revert;
+}
+
+.table-2 b:not(:last-child) {
+    border-right: 1px solid #3f4852;
+}
+
+.thead b:first-child {
+    border-radius: 3px 0 0 0;
+}
+
+.thead b:last-child {
+    border-radius: 0 3px 0 0;
+}
+
+.tbody i:first-child {
+    border-radius: 0 0 0 3px;
+}
+
+.tbody i:last-child {
+    border-radius: 0 0 3px 0;
 }
