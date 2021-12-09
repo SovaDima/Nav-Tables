@@ -13,7 +13,7 @@ body {
     justify-content: space-between;
 }
 .menu-1 ul {
-    padding: 20px 0;
+    margin: 0;
     border-radius: 3px;
     background-color: #2a3644;
     list-style: none;
@@ -22,16 +22,11 @@ body {
     border-right: 1px solid #3f4852;
 }
 .add-1{
-    display: none;
-}
-.menu-1>li:hover .add-1{
     display: block;
-    position: absolute;
 }
-.menu-1 a:first-child {
-    text-align: left;
-    padding-left: 32px;
-}
+.menu-1>li:hover>.add-1{
+    display: block;
+}   
 .menu-1 a:last-child {
     text-align: right;
     padding-left: 32px;
@@ -42,11 +37,19 @@ body {
 .menu-1 a:hover{
     color:#fd8612
 }
+.menu-1 li{
+    padding: 20px 20px;
+}
+.menu-1 li:hover>a{
+    color: #fd8612;
+    
+
+}
 .menu-1 li:hover{
     background-color: #3f4852;
 }
 .menu-1 a {
-
+    padding: 0;
     font-size: 16px;
     color: #ffffff;
     font-weight: bold;
@@ -108,7 +111,7 @@ tbody td:nth-child(3n) {
     padding-right: 21px;
 }
 
-thead .two {
+thead>.two th{
     text-align: center;
 }
 
@@ -143,6 +146,7 @@ tbody td:nth-child(5n) {
 tbody td:first-child {
     text-align: right;
     padding-left: 20px;
+    padding-right: 20px;
 }
 
 tbody tr:nth-child() {
@@ -158,29 +162,25 @@ tbody td:not(:last-child) {
 }
 
 thead th:nth-child(2n) {
-    text-align: left;
     padding-left: 23px;
 }
+thead .name{
+    text-align: left;
+}
+
 
 tbody td:first-child {
     text-align: center;
 }
-
-thead th:first-child {
-    border-radius: 3px 0 0 0;
-}
-
-thead th:last-child {
-    border-radius: 0 3px 0 0;
-    overflow: hidden;
-}
-
 tbody td:first-child {
     border-radius: 0 0 0 3px;
 }
 
 tbody td:last-child {
     border-radius: 0 0 3px 0;
+}
+.number th{
+    border-radius: 3px 0 0 0;
 }
 
 .table-2 {
@@ -244,6 +244,7 @@ tbody td:last-child {
 .tbody i:first-child {
     width: 10%;
     padding-left: 23px;
+    padding-right: 23px;
 }
 
 .tbody i:not(last-child) {
@@ -290,16 +291,10 @@ tbody td:last-child {
 
 .thead b:first-child {
     border-radius: 3px 0 0 0;
+    padding-left: 23px;
+    padding-right: 23px;
 }
 
 .thead b:last-child {
     border-radius: 0 3px 0 0;
-}
-
-.tbody i:first-child {
-    border-radius: 0 0 0 3px;
-}
-
-.tbody i:last-child {
-    border-radius: 0 0 3px 0;
-}
+} 
