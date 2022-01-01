@@ -9,6 +9,7 @@ body {
 }
 
 .menu {
+    padding: 0 30px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -25,7 +26,7 @@ body {
 .menu-1 li:not(:first-child){
     border-radius: 3px;
     border-right: 1px solid #3f4852;
-    border-left:  1px solid #3f4852;;
+    border-left:  1px solid #3f4852;
 }
 
 .menu-1>li.add-1 li {
@@ -40,7 +41,8 @@ body {
 .add-1 li,
 .salat li,
 .krab li,
-.milk li{
+.milk li,
+.holod li{
     overflow: hidden;
     padding: 0;
     font-size: 15px;
@@ -64,11 +66,14 @@ a {
     left: 0;
     top: 43px;
 }
-
+.index{
+    z-index: 1;
+}
 .add-1 li,
 .salat li,
 .krab li,
-.milk li{
+.milk li,
+.holod li{
     overflow: hidden;
     border-bottom: 1px solid #b9bdc1;
     background-color: #d2d4d5;
@@ -77,13 +82,15 @@ a {
 .add-1 li:hover,
 .salat li:hover,
 .krab li:hover,
-.milk li:hover {
+.milk li:hover,
+.holod li:hover {
     color: #fd8612;
 }
 .add-1 li,
 .salat li,
 .krab li,
-.milk li{
+.milk li,
+.holod li{
     border-radius: 3px;
 }
 .salat {
@@ -119,11 +126,20 @@ a {
     background-color: #d2d4d5;
 
 }
+.holod{
+    display: none;
+    padding: 0;
+    position: absolute;
+    width: 210px;
+    top: 43px;
+    left: 340px;
+}
 
 .menu>li:hover>.add-1,
 .menu>li:hover>.salat,
 .menu>li:hover>.krab,
-.menu>li:hover>.milk {
+.menu>li:hover>.milk,
+.menu>li:hover>.holod {
     display: block;
 }
 
@@ -155,6 +171,9 @@ a {
     font-family: "Arial";
     text-decoration: none;
 
+}
+.nav2{
+    padding-top: 50px;
 }
 
 .table-1 h1 {
