@@ -8,46 +8,145 @@ body {
     margin: 0 auto;
 }
 
-.menu{
+.menu {
+    position: relative;
     display: flex;
     justify-content: space-between;
 }
-.menu-1 ul {
+
+.menu-1 ul:first-child {
+    padding: 0;
     margin: 0;
     border-radius: 3px;
     background-color: #2a3644;
     list-style: none;
 }
-.menu-1>li{
+.menu-1 li:not(:last-child),
+.menu-1 li:not(:first-child){
+    border-radius: 3px;
     border-right: 1px solid #3f4852;
+    border-left:  1px solid #3f4852;;
 }
-.add-1{
-    display: block;
+
+.menu-1>li.add-1 li {
+    border-right: 1px solid #3f4852;
+    padding: 0;
 }
-.menu-1>li:hover>.add-1{
-    display: block;
-}   
-.menu-1 a:last-child {
-    text-align: right;
-    padding-left: 32px;
+
+.add-1 ul {
+    padding-left: 0;
 }
-.menu-1 a:last-child {
-    padding-right: 32px;
+
+.add-1 li,
+.salat li,
+.krab li,
+.milk li{
+    overflow: hidden;
+    padding: 0;
+    font-size: 15px;
+    color: #2a3644;
+    font-weight: bold;
+    font-family: "Arial";
 }
-.menu-1 a:hover{
-    color:#fd8612
+
+a {
+    text-decoration: none;
+    list-style: none;
 }
-.menu-1 li{
-    padding: 20px 20px;
+
+.add-1 {
+    padding: 0;
+    display: none;
+    position: absolute;
+    width: 210px;
+    border-radius: 3px;
+    background-color: #d2d4d5;
+    left: 0;
+    top: 43px;
 }
-.menu-1 li:hover>a{
+
+.add-1 li,
+.salat li,
+.krab li,
+.milk li{
+    overflow: hidden;
+    border-bottom: 1px solid #b9bdc1;
+    background-color: #d2d4d5;
+}
+
+.add-1 li:hover,
+.salat li:hover,
+.krab li:hover,
+.milk li:hover {
     color: #fd8612;
-    
+}
+.add-1 li,
+.salat li,
+.krab li,
+.milk li{
+    border-radius: 3px;
+}
+.salat {
+    display: none;
+    padding: 0;
+    position: absolute;
+    width: 210px;
+    border-radius: 3px;
+    left: 260px;
+    top: 43px;
+    background-color: #d2d4d5;
+}
+
+.krab {
+    display: none;
+    padding: 0;
+    position: absolute;
+    width: 210px;
+    border-radius: 3px;
+    top: 43px;
+    right: 235px;
+    background-color: #d2d4d5;
 
 }
-.menu-1 li:hover{
+.milk{
+    display: none;
+    padding: 0;
+    position: absolute;
+    width: 210px;
+    border-radius: 3px;
+    top: 43px;
+    right: 0;
+    background-color: #d2d4d5;
+
+}
+
+.menu>li:hover>.add-1,
+.menu>li:hover>.salat,
+.menu>li:hover>.krab,
+.menu>li:hover>.milk {
+    display: block;
+}
+
+.menu-1 a:hover {
+    color: #fd8612
+}
+
+.menu-1 li {
+    padding: 12px 28px;
+}
+
+.menu-1 li:hover>a {
+    color: #fd8612;
+}
+
+.menu-1 li:hover {
+    border-radius: 3px;
+}
+
+.menu-1 li:hover {
     background-color: #3f4852;
 }
+
 .menu-1 a {
     padding: 0;
     font-size: 16px;
@@ -111,7 +210,7 @@ tbody td:nth-child(3n) {
     padding-right: 21px;
 }
 
-thead>.two th{
+thead>.two th {
     text-align: center;
 }
 
@@ -164,7 +263,8 @@ tbody td:not(:last-child) {
 thead th:nth-child(2n) {
     padding-left: 23px;
 }
-thead .name{
+
+thead .name {
     text-align: left;
 }
 
@@ -172,6 +272,7 @@ thead .name{
 tbody td:first-child {
     text-align: center;
 }
+
 tbody td:first-child {
     border-radius: 0 0 0 3px;
 }
@@ -179,7 +280,8 @@ tbody td:first-child {
 tbody td:last-child {
     border-radius: 0 0 3px 0;
 }
-.number th{
+
+.number th {
     border-radius: 3px 0 0 0;
 }
 
@@ -297,4 +399,4 @@ tbody td:last-child {
 
 .thead b:last-child {
     border-radius: 0 3px 0 0;
-} 
+}
