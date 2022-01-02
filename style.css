@@ -42,7 +42,11 @@ body {
 .salat li,
 .krab li,
 .milk li,
-.holod li{
+.holod li,
+.selo li,
+.posluga li,
+.posluga2 li,
+.landscape li{
     overflow: hidden;
     padding: 0;
     font-size: 15px;
@@ -73,7 +77,11 @@ a {
 .salat li,
 .krab li,
 .milk li,
-.holod li{
+.holod li,
+.selo li,
+.posluga li,
+.posluga2 li,
+.landscape li{
     overflow: hidden;
     border-bottom: 1px solid #b9bdc1;
     background-color: #d2d4d5;
@@ -83,14 +91,17 @@ a {
 .salat li:hover,
 .krab li:hover,
 .milk li:hover,
-.holod li:hover {
+.holod li:hover,
+.selo li:hover,
+.posluga li:hover,
+.posluga2 li:hover,
+.landscape li:hover {
     color: #fd8612;
 }
 .add-1 li,
 .salat li,
 .krab li,
-.milk li,
-.holod li{
+.milk li{
     border-radius: 3px;
 }
 .salat {
@@ -134,12 +145,125 @@ a {
     top: 43px;
     left: 340px;
 }
+i{  font-style: normal;
+    font-size: 15px;
+    color: #2a3644;
+    font-weight: bold;
+    font-family: "Arial";
+}
+.nkam{
+    display: none;
+    padding: 0;
+    position: absolute;
+    width: 210px;
+    top: 84px;
+    border: 3px;
+    left: 215px;
+}
+.chip{
+    display: none;
+    padding: 0;
+    position: absolute;
+    width: 210px;
+    top: 125px;
+    right: 215px;
+    border-radius: 3px;
+}
+.selo{
+    display: none;
+    position: absolute;
+    content: "";
+    padding: 0;
+    width: 211px;
+    left: 165px;
+    top: 45px;
+border-radius: 3px;
+background-color: #d2d4d5;
+}
+.nav2{
+    margin-bottom: 50px;
+}
+.socials{
+    display: flex;
+}
+.home::before{
+    content: "";
+    position: absolute;
+    background-image: url(/img/homebefore.png);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 13px;
+    left: 10px;
+    bottom: 16px;
+}
+.home:hover::before{
+    position: absolute;
+    background-image: url(/img/home.png);
+    width: 16px;
+    height: 13px;
+    left: 10px;
+    bottom: 16px;   
+    content:"";
+}
+.posluga{
+    display: none;
+    position: absolute;
+    width: 210px;
+    padding: 0;
+    left: 345px;
+    top: 43px;
+}
+.posluga2{
+    display: none;
+    width: 210px;
+    padding: 0;
+    position: absolute;
+    left: 555px;
+    border-left: 1px solid #b9bdc1;
+    top: 42px;
+}
+.landscape{
+    display: none;
+    position: absolute;
+    width: 211px;
+    padding: 0;
+border-radius: 3px;
+top: 43px;
+right:215px;
+background-color: #d2d4d5;
+}
+.posluga2 a{
+    padding: 20px 28px;
+}
+
+.socials li{
+    list-style: none;
+}
+.social a {
+    display: block;
+    background:url(/img/ssss.png);
+    width: 10px;
+    height: 19px;
+    transition: all 1s ease;
+}
+a.facebook {
+    width: 10px;
+    height: 19px;
+    background-position: 0 0;
+}
+
 
 .menu>li:hover>.add-1,
 .menu>li:hover>.salat,
 .menu>li:hover>.krab,
 .menu>li:hover>.milk,
-.menu>li:hover>.holod {
+.menu>li:hover>.holod,
+.menu>li:hover>.holod li:hover>.nkam,
+.menu>li:hover>.holod li:hover>.nkam li:hover>.chip,
+.menu>li:hover>.selo,
+.menu>li:hover>.posluga,
+.menu>li:hover>.posluga2,
+.menu>li:hover>.landscape{
     display: block;
 }
 
