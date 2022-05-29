@@ -151,10 +151,15 @@ a {
     top: 43px;
     left: 340px;
 }
-i{  font-style: normal;
+i{
+    font-style: normal;
+   
+}
+.nav2 li:hover a{  
+    font-style: normal;
     font-size: 15px;
     font-weight: bold;
-    color: #2a3644 ;
+    color: #2a3644;
     font-family: "Arial";
 }
 .nav2 li:nth-child(3):hover> li>i{
@@ -210,13 +215,13 @@ background-color: #d2d4d5;
 }
 .socials a {
     display: block;
-    background: url(/img/ssss.png) no-repeat;
+    background: url(img/ssss.png) no-repeat;
 }
 
 .home::before{
     content: "";
     position: absolute;
-    background-image: url(/img/homebefore.png);
+    background-image: url(img/homebefore.png);
     background-repeat: no-repeat;
     width: 16px;
     height: 13px;
