@@ -265,7 +265,7 @@ i {
     width: 16px;
     height: 13px;
     left: 10px;
-    top: 12px;
+    top: 13px;
 }
 
 .home:hover::before {
@@ -554,6 +554,7 @@ tbody tr:last-child>td:first-child {
 .table-2 {
     display: table;
     width: 960px;
+    margin-bottom: 50px;
 }
 
 .tbody i {
