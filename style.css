@@ -9,12 +9,16 @@ body {
 }
 
 .menu {
+    width: 100%;
     padding: 0 30px;
     position: relative;
     display: flex;
     justify-content: space-between;
 }
-
+/* .flex{
+    display: flex;
+}
+  */
 
 .menu-1 ul:first-child {
     padding: 0;
@@ -185,7 +189,9 @@ i {
     font-style: normal;
 
 }
-
+.nav2{
+    width: 100%;
+}
 .nav2 li:hover a {
     font-style: normal;
     font-weight: bold;
@@ -260,7 +266,7 @@ i {
 .home::before {
     content: "";
     position: absolute;
-    background-image: url(img/homebefore.png);
+    background-image: url(img/Background.png);
     background-repeat: no-repeat;
     width: 16px;
     height: 13px;
@@ -385,7 +391,7 @@ a.instagram:hover {
 
 .menu-1 li:hover {
     background-color: #3f4852;
-    border-radius: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 .menu-1 a {
@@ -429,11 +435,6 @@ a.instagram:hover {
 .table-1 tr {
     text-align: center;
 }
-
-.name {
-    border-radius: 3px 0 0 0;
-}
-
 .number {
     border-radius: 3px 0 0 0;
 }
@@ -498,7 +499,7 @@ tbody td:nth-child(5n) {
     font-size: 16px;
     color: #2a3644;
     font-family: "Arial";
-    padding: 14px 0;
+    padding: 14px 153px;
 }
 
 .table-1 td {
@@ -509,8 +510,8 @@ tbody td:nth-child(5n) {
 
 tbody td:first-child {
     text-align: right;
-    padding-left: 5px;
-    padding-right: 6px;
+    padding-left: 14px;
+    padding-right: 8px;
 }
 
 tbody tr:nth-child() {
@@ -673,4 +674,10 @@ tbody tr:last-child>td:first-child {
 
 .table-2 .tbody:last-child>i:last-child {
     border-radius: 0 0 3px 0;
+}
+.table-2 .borderB{
+    border: 0;
+}
+.dtab{
+    display: table;
 }
