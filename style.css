@@ -220,7 +220,7 @@ nav.flex-between {
     top: 16px;
     width: 16px;
     height: 13px;
-    background-image: url(../img/hom.png);
+    background-image: url(img/hom.png);
     background-position: -80px -26px;
 }
 .menu-3>li:hover:first-child a:before {
@@ -244,7 +244,7 @@ nav.flex-between {
 
 .social a {
     display: block;
-    background: url(../img/sprite.png) no-repeat;
+    background: url(img/sprite.png) no-repeat;
 }
 
 a.facebook {
