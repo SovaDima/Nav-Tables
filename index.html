@@ -4,145 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation and Tables</title>
+    <title>Nav and tables</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="wrapper">
-        <div class="nav">
-        <h1>1.Навігація</h1>
-        <div class="menu-1">
-            <ul class="menu">
-                <li class=" borderR"><a href="#">Ковбаса</a>
-                    <ul class="add-1 index">
-                        <a href="#"><li class="first">Ліверна</li></a>
-                        <a href="#"><li>Домашні ковбаси</li></a>
-                        <a href="#"><li>Мисливська</li></a>
-                        <a href="#"><li class="last">Салямі</li></a>
+        <h1 class="h1">1. Навігація</h1>
+        <nav>
+            <ul class="flex-between menu menu1">
+                <li><a href="#">Ковбаса</a>
+                    <ul class="insade">
+                        <li><a href="#">Ліверна</a></li>
+                        <li><a href="#">Домашні ковбаси</a></li>
+                        <li><a href="#">Мисливська</a></li>
+                        <li><a href="#">Салямі</a></li>
                     </ul>
                 </li>
-                <li class="borderR borderL"><a href="#">Салатік</a>
-                <ul class="salat index">
-                    <a href="#"><li class="first">Олів’є</li></a>
-                    <a href="#"><li>Мімоза</li></a>
-                    <a href="#"><li>Грецький з горіхами</li></a>
-                    <a href="#"><li class="last">Фруктовий</li></a>
-                </ul>
+                <li><a href="#">Салатік</a>
+                    <ul class="insade">
+                        <li><a href="#">Олів’є</a></li>
+                        <li><a href="#">Мімоза</a></li>
+                        <li><a href="#">Грецький з горіхами</a></li>
+                        <li><a href="#">Фруктовий</a></li>
+                    </ul>
                 </li>
-                <li class="borderR borderL"><a href="#">Крабові палочки</a>
-                <ul class="krab index">
-                    <a href="#"><li class="first">Водяний світ</li></a>
-                    <a href="#"><li>На вагу</li></a>
-                    <a href="#"><li>Скажений краб</li></a>
-                    <a href="#"><li class="last">Крабстер</li></a>
-                </ul>
+                <li><a href="#">Крабові палочки</a>
+                    <ul class="insade">
+                        <li><a href="#">Водяний світ</a></li>
+                        <li><a href="#">На вагу</a></li>
+                        <li><a href="#">Скажений краб</a></li>
+                        <li><a href="#">Крабстер</a></li>
+                    </ul>
                 </li>
-                <li class="borderL"><a href="#">Молоко</a>
-                <ul class="milk index">
-                    <a href="#"><li class="first">Корівка</li></a>
-                    <a href="#"><li>Селянське</li></a>
-                    <a href="#"><li>Віньковецьке</li></a>
-                    <a href="#"><li class="last">Парне 99%</li></a>
-                </ul>
+                <li><a href="#">Молоко</a>
+                    <ul class="insade">
+                        <li><a href="#">Корівка</a></li>
+                        <li><a href="#">Селянське</a></li>
+                        <li><a href="#">Віньковецьке</a></li>
+                        <li><a href="#">Парне 99%</a></li>
+                    </ul>
                 </li>
             </ul>
-        </div>
-        </div>
-        <div class="wrapper">
-        <div class="nav2">
-            <div class="menu-1 dtab">
-            <ul class="menu">
-                <a href="#"><li class="">Ноутбук</li></a>
-                <a href="#"><li>Телефон</li></a>
-                <a href="#"><li class=" ">Холодильник
-                    <ul class="holod index">
-                        <a href="#"><li class="first">Морозильна камера</li></a>
-                        <a href="#"><li>2-х камерні</li></a>
-                        <a href="#"><li class="hover"><i>4-х камеpні</i></a>
-                            <ul class="nkam index">
-                                <a href="#"><li class="first">Суха заморозка</li></a>
-                                <a href="#"><li>Мокра заморозка</li></a>
-                                <a href="#"><li>Середня заморозка</li></a>
-                                <a href="#"><li class="transpL last"><i class="orange ">Дешеві</i>
-                                    <ul class="chip index">
-                                        <a href="#"><li class="first">Саморобні</li></a>
-                                        <a href="#"><li>Неробочі</li></a>
-                                        <a href="#"><li>Для дітей</li></a>
-                                        <a href="#"><li class="last">Без дверей</li></a>
-
+        </nav>
+        <nav class="dtable">
+            <ul class="menu menu-2">
+                <li><a href="#">Ноутбук</a></li>
+                <li><a href="#">Телефон</a></li>
+                <li><a href="#">Холодильник</a>
+                    <ul class="insade borderR">
+                        <li><a href="#">Морозильна камера</a></li>
+                        <li><a href="#">2-х камерні</a></li>
+                        <li><a href="#">4-х камері</a>
+                            <ul class="in-insade borderL">
+                                <li><a href="#">Суха заморозка</a></li>
+                                <li><a href="#">Мокра заморозка</a></li>
+                                <li><a href="#">Середня заморозка</a></li>
+                                <li><a href="#">Дешеві</a>
+                                    <ul class="double-insade">
+                                        <li><a href="#">Саморобні</a></li>
+                                        <li><a href="#">Неробочі</a></li>
+                                        <li><a href="#">Для дітей</a></li>
+                                        <li><a href="#">Без дверей</a></li>
                                     </ul>
-                                </li></a>
+                                </li>
                             </ul>
                         </li>
-                        
-                        <a href="#"><li class="last">6-ти камері</li></a>
+                        <li><a href="#">6-ти камері</a></li>
                     </ul>
-                <a href="#"><li>Товари для дорослих та дітей</li></a>
-                <a href="#"><li class="">Різне</li></a>
+                </li>
+                <li><a href="#">Товари для дорослих та дітей</a></li>
+                <li><a href="#">Різне</a></li>
             </ul>
-        </div>
-        </div>
-        <div class="wrapper">
-            <div class="nav3">
-                <div class="menu-1">
-                    <div class="flex">
-                    <ul class="menu">
-                        <li class="home borderR"><a href="#">Головна</li></a>
-                        <a href="#"><li>Про село
-                            <ul class="selo">
-                                <a href="#"><li class="first">Оформлення паїв</li></a>
-                                <a href="#"><li>Голова колгоспу</li></a>
-                                <a href="#"><li>Графік роботи клубу</li></a>
-                                <a href="#"><li class="last">Контакти</li></a>
-                            </ul>
-                        </li></a>
-                        <!-- <div class="flex"> -->
-                        <a href="#"><li class="borderL">Наші послуги</a>
-                            <ul class="posluga">
-                                <a href="#"><li class="first">Видоїти корову</li></a>
-                                <a href="#"><li>Випасти свиню</li></a>
-                                <a href="#"><li>Принести води</li></a>
-                                <a href="#"><li class="last">Прибрати подвір’я</li></a>
-                            </ul>
-                            <ul class="posluga2">
-                                <a href="#"><li class="first">Покропити город</li></a>
-                                <a href="#"><li>Крамниця товарів</li></a>
-                                <a href="#"><li style="height:16px ;"></li></a>
-                                 <a href="#"><li style="height:17px ;"></li></a>   
-                            </ul>
-                        </li>
-                        <!-- </div> -->
-                        <a href="#"><li class="borderL">Краєвид околиці
-                            <ul class="landscape">
-                                <a href="#"><li>Річка</li></a>
-                                <a href="#"><li>Вікно у поле</li></a>
-                                <a href="#"><li>Зелена пшениця</li></a>
-                                <a href="#"><li>Волошки</li></a>
-                                <a href="#"><li>Коло дуба</li></a>
-                                <a href="#"><li>Стара та розвалена 
-                                    хата баби Зої
-                                    </li></a>
-                                <a href="#"><li>Хлів поросят</li></a>
-                            </ul>
-                        </li></a>
-                        <ul class="socials"> 
-                            <li>
-                                <a class="facebook" href="#"></a>
-                            </li>
-                            <li>
-                                <a class="twiter" href="#"></a>
-                            </li>
-                            <li>
-                                <a class="instagram" href="#"></a>
-                            </li>
-                        </ul>
+        </nav>
+        <nav class="flex-between">
+            <ul class="menu menu-3">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="#">Про село</a>
+                    <ul class="insade">
+                        <li><a href="#">Оформлення паїв</a></li>
+                        <li><a href="#">Голова колгоспу</a></li>
+                        <li><a href="#">Графік роботи клубу</a></li>
+                        <li><a href="#">Контакти</a></li>
                     </ul>
-
+                </li>
+                <li><a href="#">Наші послуги</a>
+                    <div class="insade border-top">
+                        <div class="flex    ">
+                            <ul class="insade1">
+                                <li><a href="#">Видоїти корову</a></li>
+                                <li><a href="#">Випасти свиню</a></li>
+                                <li><a href="#">Принести води</a></li>
+                                <li><a href="#">Прибрати подвір’я</a></li>
+                            </ul>
+                            <ul class="insade2">
+                                <li><a href="#">Покропити город</a></li>
+                                <li><a href="#">Крамниця товарів</a></li>
+                            </ul>
+                        </div>
                     </div>
-
-                </div>
-            </div>
-        </div>
+                </li>
+                <li><a href="#">Краєвид околиці</a>
+                    <ul class="insade">
+                        <li><a href="#">Річка</a></li>
+                        <li><a href="#">Вікно у поле</a></li>
+                        <li><a href="#">Зелена пшениця</a></li>
+                        <li><a href="#">Волошки</a></li>
+                        <li><a href="#">Коло дуба</a></li>
+                        <li><a href="#">Стара та розвалена
+                                хата баби Зої
+                            </a></li>
+                        <li><a href="#">Хлів поросят</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="social">
+                <li><a class="facebook" href="#"></a></li>
+                <li><a class="twitter" href="#"></a></li>
+                <li><a class="instagram" href="#"></a></li>
+            </ul>
+        </nav>
         <div class="table-1">
                 <h2>2.Таблиця</h2>
                 <table>
