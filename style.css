@@ -152,7 +152,7 @@ nav.flex-between {
     border-radius: 0 3px 3px 0;
 }
 
-.insade>li:first-child>a {
+.insade li:first-child>a {
     border-radius: 3px 3px 0 0;
 }
 
@@ -410,10 +410,9 @@ thead th:nth-child(2n) {
 .thead b:first-child {
     border-radius: 3px 0 0 0;
 }
-.thead b:last-child{
-    border-radius: 0 3px 0;
+.thead b:last-child {
+    border-radius: 0 3px 0 0;
 }
-
 
 thead .name {
     text-align: left;
