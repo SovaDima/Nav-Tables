@@ -36,7 +36,7 @@ ul {
     display: flex;
     justify-content: space-between;
 }
-.menu1 a:first-child{
+.menu1~a:first-child{
     border-radius: 3px 0 0 3px;
 }
 
@@ -152,7 +152,7 @@ nav.flex-between {
     border-radius: 0 3px 3px 0;
 }
 
-.insade li:first-child>a {
+.insade>li:first-child>a {
     border-radius: 3px 3px 0 0;
 }
 
@@ -411,7 +411,7 @@ thead th:nth-child(2n) {
     border-radius: 3px 0 0 0;
 }
 .thead b:last-child{
-    border-radius: 0 3px 0 0;
+    border-radius: 0 3px 0;
 }
 
 
